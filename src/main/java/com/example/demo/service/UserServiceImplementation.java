@@ -20,6 +20,8 @@ public class UserServiceImplementation implements UserService {
         return user;
     }
 
+
+
     @Override
     public User getUserById(String id) {
         var userCurent = users.stream().filter(user -> user.getIdUser().equals(id)).findFirst();
