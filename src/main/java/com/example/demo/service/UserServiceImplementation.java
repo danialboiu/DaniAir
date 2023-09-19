@@ -12,6 +12,8 @@ import java.util.UUID;
 @Service
 public class UserServiceImplementation implements UserService {
     List<User> users = new ArrayList<>();
+
+
     @Override
     public User createUser(CreateUserRequest request) {
         String idUser = UUID.randomUUID().toString();
