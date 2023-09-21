@@ -1,10 +1,8 @@
 package com.example.demo.service;
 
-import com.example.demo.domain.Aeroport;
 import com.example.demo.domain.Avion;
 import com.example.demo.exceptions.AvionIdNotFoundException;
 import com.example.demo.request.CreateAvionRequest;
-import com.example.demo.response.IdNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

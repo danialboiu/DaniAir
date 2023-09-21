@@ -6,4 +6,5 @@ import com.example.demo.request.CreateCursaRequest;
 public interface CursaService {
     Cursa createCursa(CreateCursaRequest request);
     Cursa getCursaById(String id);
+
 }
