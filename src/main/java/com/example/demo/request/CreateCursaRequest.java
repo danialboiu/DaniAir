@@ -6,16 +6,26 @@ public class CreateCursaRequest {
     private String idAeroportPlecare;
     private String idAeroportDestinatie;
     private String idAvion;
+    private String status;
 
     public CreateCursaRequest() {
     }
 
-    public CreateCursaRequest(String oraPlecare, int durataInOre, String idAeroportPlecare, String idAeroportDestinatie, String idAvion) {
+    public CreateCursaRequest(String oraPlecare, int durataInOre, String idAeroportPlecare, String idAeroportDestinatie, String idAvion, String status) {
         this.oraPlecare = oraPlecare;
         this.durataInOre = durataInOre;
         this.idAeroportPlecare = idAeroportPlecare;
         this.idAeroportDestinatie = idAeroportDestinatie;
         this.idAvion = idAvion;
+        this.status = status;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public String getOraPlecare() {

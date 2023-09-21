@@ -3,7 +3,6 @@ package com.example.demo.service;
 import com.example.demo.domain.Aeroport;
 import com.example.demo.exceptions.AeroportIdNotFoundException;
 import com.example.demo.request.CreateAeroportRequest;
-import com.example.demo.response.IdNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
