@@ -29,7 +29,8 @@ public class CursaServiceImplementation implements CursaService{
                 request.getIdAeroportPlecare(),
                 request.getIdAeroportDestinatie(),
                 idCursa,
-                request.getIdAvion());
+                request.getIdAvion(),
+                request.getStatus());
         curse.add(cursa);
         return cursa;
     }
@@ -42,5 +43,10 @@ public class CursaServiceImplementation implements CursaService{
         } else {
             throw new CursaIdNotFoundException();
         }
+    }
+
+    @Override
+    public List<Cursa> getCurse() {
+        return curse;
     }
 }
