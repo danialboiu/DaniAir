@@ -26,4 +26,9 @@ public class AeroportServiceImplementation implements AeroportService {
             throw new AeroportIdNotFoundException();
         }
     }
+
+    @Override
+    public List<Aeroport> getAeroporturi() {
+        return aeroporturi;
+    }
 }

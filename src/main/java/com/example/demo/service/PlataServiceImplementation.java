@@ -40,4 +40,9 @@ public class PlataServiceImplementation implements PlataService {
             throw new PlataIdNotFoundException();
         }
     }
+
+    @Override
+    public List<Plata> getPlati() {
+        return plati;
+    }
 }

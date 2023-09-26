@@ -27,4 +27,9 @@ public class AvionServiceImplementation implements AvionService {
             throw new AvionIdNotFoundException();
         }
     }
+
+    @Override
+    public List<Avion> getAvioane() {
+        return avioane;
+    }
 }

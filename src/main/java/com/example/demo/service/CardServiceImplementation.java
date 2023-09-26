@@ -29,4 +29,9 @@ public class CardServiceImplementation implements CardService{
             throw new CardIdNotFoundException();
         }
     }
+
+    @Override
+    public List<Card> getCarduri() {
+        return carduri;
+    }
 }

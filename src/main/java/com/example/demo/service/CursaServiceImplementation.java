@@ -44,4 +44,9 @@ public class CursaServiceImplementation implements CursaService{
             throw new CursaIdNotFoundException();
         }
     }
+
+    @Override
+    public List<Cursa> getCurse() {
+        return curse;
+    }
 }

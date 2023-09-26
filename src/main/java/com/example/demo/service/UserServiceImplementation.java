@@ -33,4 +33,9 @@ public class UserServiceImplementation implements UserService {
             throw new UserIdNotFoundException();
         }
     }
+
+    @Override
+    public List<User> getUseri() {
+        return users;
+    }
 }

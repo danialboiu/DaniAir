@@ -8,6 +8,8 @@ import com.example.demo.service.AeroportService;
 import com.example.demo.service.CardService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class CardController {
     CardService cardService;
@@ -21,5 +23,9 @@ public class CardController {
     @PostMapping("/carduri")
     Card createCard(@RequestBody CreateCardRequest request) {
         return cardService.createCard(request);
+    }
+    @GetMapping("/carduri")
+    List<Card> getCarduri() {
+        return cardService.getCarduri();
     }
 }
